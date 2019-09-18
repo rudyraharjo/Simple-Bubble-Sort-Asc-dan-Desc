@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding Test</title>
+    </head>
+    <body>
+        <h2>Coding Test</h2>
+        
+        <h3> mencari huruf yang pertama duplikat.</h3> 
+        <form>
+            Input Text:
+            <br>
+                <input type="text" style="text-transform: uppercase" id="valueInput" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+                <input type="button" onclick="Submit()" value="Submit" />
+            <br>
+            <p>Output : <span id="output" style=""></span></p>
+
+        </form>
+        
+        <h3> Sort Asc dan Desc</h3> 
+        <p>
+            <span id="sort"></span> 
+            
+            <br /> <br />
+            
+            <input type="button" onclick="SortAsc()" value="Sort Asc" />  <input type="button" onclick="SortDesc()" value="Sort Desc" />
+        </p>
+        <br /> 
+        <div id="videoWrapper"> </div>
+
+    </body>
+    <script src="app.js"></script>
+</html>
